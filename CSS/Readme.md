@@ -36,3 +36,16 @@
               border: 4px solid green;
           }  
         ```
+* Selector  ```input + label``` is a adjacent sibling combinator that targets a ```<label>``` element that immediately follows an ```<input>``` element
+  - ```+``` is the adjacent sibling combinator. This means it selects the element immediately after the targeted element, but only if it is directly adjacent (no other elements in between)
+  - ```css
+      input + label {
+      color: blue;
+      font-weight: bold;
+    }
+    ```
+ 
+
+
+
+
