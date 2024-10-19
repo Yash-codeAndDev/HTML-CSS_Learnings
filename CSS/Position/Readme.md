@@ -69,4 +69,4 @@
     - Elements that are flex or grid containers.
     - Elements with certain CSS properties, such as opacity less than 1, transform, filter, etc.
 * If an element inside a parent has a z-index value, its stacking order will be determined relative to other elements within the same stacking context. If the parent element creates a new stacking context, then z-index values in that context will not affect elements outside it.
-* 
+
