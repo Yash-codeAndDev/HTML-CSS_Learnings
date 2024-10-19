@@ -56,3 +56,17 @@
           top: 10px; /* Becomes fixed when it scrolls 10px from the top */
         }
      ```
+
+# Z-Index
+
+*  **z-index** property controls the stacking order of elements that overlap. Elements with a higher z-index value will appear in front of elements with a lower z-index value.
+    - z-index only works on elements with a position property set to something other than static (such as relative, absolute, fixed, or sticky).
+    - The stacking context (which determines how elements are layered) can be affected by the z-index of the element or its parent containers.
+    - Elements with a higher z-index will appear on top of elements with a lower one when they overlap.
+
+* The z-index values only work within the same stacking context. A stacking context is formed by:
+    - Any element with a position other than static and a z-index specified.
+    - Elements that are flex or grid containers.
+    - Elements with certain CSS properties, such as opacity less than 1, transform, filter, etc.
+* If an element inside a parent has a z-index value, its stacking order will be determined relative to other elements within the same stacking context. If the parent element creates a new stacking context, then z-index values in that context will not affect elements outside it.
+* 
